@@ -1,0 +1,66 @@
+let num = parseInt(prompt("Enter a number:"));
+
+// Positive, Negative, or Zero
+if (num > 0) {
+    console.log("Positive number");
+} else if (num < 0) {
+    console.log("Negative number");
+} else {
+    console.log("Zero");
+}
+
+// Even or Odd
+if (num % 2 === 0) {
+    console.log("Even number");
+} else {
+    console.log("Odd number");
+}
+
+// Skip divisibility check if number is negative
+if (num < 0) {
+    console.log("Divisibility check skipped");
+} else {
+
+    // Divisible by 3 and 5
+    if (num % 3 === 0 && num % 5 === 0) {
+        console.log("Divisible by both 3 and 5");
+    } else if (num % 3 === 0) {
+        console.log("Divisible by 3");
+    } else if (num % 5 === 0) {
+        console.log("Divisible by 5");
+    } else {
+        console.log("Neither divisible by 3 nor 5");
+    }
+}
+
+// Weekday using switch
+if (num >= 1 && num <= 7) {
+    switch (num) {
+        case 1:
+            console.log("Monday");
+            break;
+        case 2:
+            console.log("Tuesday");
+            break;
+        case 3:
+            console.log("Wednesday");
+            break;
+        case 4:
+            console.log("Thursday");
+            break;
+        case 5:
+            console.log("Friday");
+            break;
+        case 6:
+            console.log("Saturday");
+            break;
+        case 7:
+            console.log("Sunday");
+            break;
+    }
+}
+
+// Large number check
+if (num > 100) {
+    console.log("Large number");
+}
