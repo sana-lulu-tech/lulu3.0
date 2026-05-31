@@ -1,0 +1,6 @@
+const person ={
+    name: "sana",
+    height:"178",
+};
+console.log(person.height);
+
